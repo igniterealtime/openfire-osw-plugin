@@ -1,0 +1,7 @@
+.classpath
+*.cmd
+.project
+lib/osw-model.jar
+bin/
+target
+semantic.cache
