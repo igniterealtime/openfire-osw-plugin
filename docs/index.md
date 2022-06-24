@@ -1,4 +1,4 @@
-# One Social Web XEPs
+# One Social Web
 
 - [Activity Stream over XMPP](https://igniterealtime.github.io/openfire-osw-plugin/xep/osw-activities.xml)
 - [PEP Inbox](https://igniterealtime.github.io/openfire-osw-plugin/xep/osw-inbox.xml)
