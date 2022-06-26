@@ -1,0 +1,27 @@
+{
+  "name": "org.igniterealtime.onesocialweb.client",
+  "version": "0.0.1",
+  "description": "Adds onesocialweb protocol support to an openfire server",
+  "engine": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igniterealtime/openfire-osw-plugin.git"
+  },
+  "keywords": [
+    "OneSocialWeb",
+    "Node.js",
+    "JavaScript"
+  ],
+  "author": "Ignite Realtime",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/igniterealtime/openfire-osw-plugin/issues"
+  },
+  "homepage": "https://github.com/igniterealtime/openfire-osw-plugin",
+  "sideEffects": false,
+  "dependencies": {
+    "lit": "^2.1.3"
+  }
+}
