@@ -4,7 +4,7 @@ This is the revived onesocialweb project for Openfire 4.7.1+. It includes:
 
 - the Openfire plugin
 - the web client which can be accessed with https://your-server:7443/osw.
-- [the old web site](http://onesocialweb.org)
+- [the old web site](https://igniterealtime.github.io/openfire-osw-plugin)
 
 ## CI Build Status
 
