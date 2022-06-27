@@ -172,8 +172,8 @@ public class OswServiceImp implements OswService {
 		}
 
 		// Add our extension
-		ProviderManager.getInstance().addIQProvider("query", "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#query", new IQProfileProvider());
-		ProviderManager.getInstance().addIQProvider("query", "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations#query", new IQRelationProvider());
+		ProviderManager.getInstance().addIQProvider("query", "http://onesocialweb.org/spec/1.0/vcard4#query", new IQProfileProvider());
+		ProviderManager.getInstance().addIQProvider("query", "http://onesocialweb.org/spec/1.0/relations#query", new IQRelationProvider());
 		ProviderManager.getInstance().addIQProvider("pubsub", "http://jabber.org/protocol/pubsub", new ProviderPubSubIQ());
 		ProviderManager.getInstance().addExtensionProvider("event",  "http://jabber.org/protocol/pubsub#event", new ProviderPubSubEvent());
 
@@ -599,7 +599,7 @@ public class OswServiceImp implements OswService {
 		requiresAuth();
 
 		// Send the request
-		IQPubSubItems packet = new IQPubSubItems("https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/inbox");
+		IQPubSubItems packet = new IQPubSubItems("http://onesocialweb.org/spec/1.0/inbox");
 		IQ result = requestBlocking(packet);
 
 		// Process reply

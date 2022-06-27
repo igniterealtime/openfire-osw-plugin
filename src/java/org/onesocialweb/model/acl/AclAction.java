@@ -18,11 +18,11 @@ package org.onesocialweb.model.acl;
 
 public interface AclAction {
 
-	public static final String ACTION_VIEW = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view";
+	public static final String ACTION_VIEW = "http://onesocialweb.org/spec/1.0/acl/action/view";
 	
-	public static final String PERMISSION_GRANT = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant";
+	public static final String PERMISSION_GRANT = "http://onesocialweb.org/spec/1.0/acl/permission/grant";
 	
-	public static final String PERMISSION_DENY = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/deny";
+	public static final String PERMISSION_DENY = "http://onesocialweb.org/spec/1.0/acl/permission/deny";
 
 	public String getPermission();
 

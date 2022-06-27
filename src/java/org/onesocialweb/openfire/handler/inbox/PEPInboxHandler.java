@@ -30,7 +30,7 @@ import org.xmpp.packet.PacketError;
 
 public class PEPInboxHandler extends PEPNodeHandler {
 
-	public static String NODE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/inbox";
+	public static String NODE = "http://onesocialweb.org/spec/1.0/inbox";
 	
 	private XMPPServer server;
 	

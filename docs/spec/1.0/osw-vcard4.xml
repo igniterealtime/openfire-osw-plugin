@@ -71,15 +71,15 @@
     from='hamlet@denmark.lit/client'
     to='denmark.lit'
     id='id1'>
-  <publish xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#publish">
+  <publish xmlns="http://onesocialweb.org/spec/1.0/vcard4#publish">
     <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
       <fn>
         <text>Lord Hamlet</text>
-        <acl-rule xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
-          <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
-            https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
+        <acl-rule xmlns="http://onesocialweb.org/spec/1.0/">
+          <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
+            http://onesocialweb.org/spec/1.0/acl/action/view
           </acl-action>
-          <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone"/>
+          <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/everyone"/>
         </acl-rule>
       </fn>
       <photo>
@@ -103,24 +103,24 @@
     from='hamlet@denmark.lit/snsclient'
     to='denmark.lit'
     id='osw2'>
-  <merge xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#merge">
+  <merge xmlns="http://onesocialweb.org/spec/1.0/vcard4#merge">
     <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
       <fn>
         <text>THE Lord Hamlet</text>
-        <acl-rule xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
-          <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
-            https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
+        <acl-rule xmlns="http://onesocialweb.org/spec/1.0/">
+          <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
+            http://onesocialweb.org/spec/1.0/acl/action/view
           </acl-action>
-          <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone"/>
+          <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/everyone"/>
         </acl-rule>
       </fn>
       <birthday>
         <datetime>1850-04-06T21:23:00-07:00</datetime>
-        <acl-rule xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
-          <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
-            https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
+        <acl-rule xmlns="http://onesocialweb.org/spec/1.0/">
+          <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
+            http://onesocialweb.org/spec/1.0/acl/action/view
           </acl-action>
-          <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/group">Friends</acl-subject>
+          <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/group">Friends</acl-subject>
         </acl-rule>
       </birthday>
     </vcard>
@@ -141,7 +141,7 @@
     from='hamlet@denmark.lit/snsclient'
     to='denmark.lit'
     id='osw4'>
-  <remove xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#remove">
+  <remove xmlns="http://onesocialweb.org/spec/1.0/vcard4#remove">
     <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
       <birthday />
     </vcard>
@@ -174,7 +174,7 @@
     from='romeo@montague.lit/orchard'
     to='juliet@capulet.lit'
     id='osw2'>
-  <query xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#query">
+  <query xmlns="http://onesocialweb.org/spec/1.0/vcard4#query">
   </query>
 </iq>
 ]]></example>
@@ -185,7 +185,7 @@
 <iq type='result'
     from='juliet@capulet.lit' 
     to='romeo@montague.lit/orchard'>
-  <query xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#query">
+  <query xmlns="http://onesocialweb.org/spec/1.0/vcard4#query">
     <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
       <fn>
         <text>Juliet Capulet</text>

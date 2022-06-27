@@ -231,7 +231,7 @@ public interface OswService {
 	 * Retrieves from the XMPP Server the List of Activities (ActivityEntries) of the specified user.
 	 * 
 	 * @param userJid					The jid of the user whose activities we want to retrieve.
-	 * @return							A List of ActivityEntries. See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-activities.html
+	 * @return							A List of ActivityEntries. See: http://onesocialweb.org/spec/1.0/xep-osw-activities.html
 	 * @throws RequestException			throws a RequestException if it receives from the server a reply IQ  of
 	 * 									type ERROR.
 	 * @throws ConnectionRequired		throws a ConnectionRequired exception if not connected to an XMPP Server.
@@ -242,7 +242,7 @@ public interface OswService {
 	
 	
 	/**
-	 * @param entry							An ActivityEntry. See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-activities.html
+	 * @param entry							An ActivityEntry. See: http://onesocialweb.org/spec/1.0/xep-osw-activities.html
 	 * @return								true if it succeeded in posting the activity to the server 
 	 * 										i.e. if it receives a reply IQ of type RESULT. 
 	 * @throws ConnectionRequired			throws a ConnectionRequired exception if not connected to an XMPP Server.
@@ -253,7 +253,7 @@ public interface OswService {
 	public boolean postActivity(ActivityEntry entry) throws ConnectionRequired, AuthenticationRequired, RequestException;
 	
 	/**
-	 * @param entry							An ActivityEntry. See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-activities.html
+	 * @param entry							An ActivityEntry. See: http://onesocialweb.org/spec/1.0/xep-osw-activities.html
 	 * @return								true if it succeeded in posting the comment to the server 
 	 * 										i.e. if it receives a reply IQ of type RESULT. 
 	 * @throws ConnectionRequired			throws a ConnectionRequired exception if not connected to an XMPP Server.
@@ -268,7 +268,7 @@ public interface OswService {
 	 * Tries to delete the activity (if posted by the user) and to notify all subscribers. 
 	 * If the activity was not posted by the user in the first place, it will throw 
 	 * 
-	 * @param activityId					An ActivityId. See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-activities.html
+	 * @param activityId					An ActivityId. See: http://onesocialweb.org/spec/1.0/xep-osw-activities.html
 	 * @return								true if it succeeded in deleting the activity at the server 
 	 * 										i.e. if it receives a reply IQ of type RESULT. 
 	 * @throws ConnectionRequired			throws a ConnectionRequired exception if not connected to an XMPP Server.
@@ -280,7 +280,7 @@ public interface OswService {
 
 	
 	/**
-	 * @param activityId					An ActivityEntry. See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-activities.html
+	 * @param activityId					An ActivityEntry. See: http://onesocialweb.org/spec/1.0/xep-osw-activities.html
 	 * @return								true if it succeeded in updating the activity at the server 
 	 * 										i.e. if it receives a reply IQ of type RESULT. 
 	 * @throws ConnectionRequired			throws a ConnectionRequired exception if not connected to an XMPP Server.
@@ -299,7 +299,7 @@ public interface OswService {
 	 * Retrieves from the XMPP server a complete profile by trying to send an IQ of type IQProfileQuery.
 	 * 
 	 * @param userJid					jid of the user whose profile we want to retrieve.
-	 * @return							the OneSocialWeb Profile. See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-profile.html
+	 * @return							the OneSocialWeb Profile. See: http://onesocialweb.org/spec/1.0/xep-osw-profile.html
 	 * @throws RequestException			throws a RequestException if it receives from the server a reply IQ  of
 	 * 									type ERROR after trying to retrieve the Profile.
 	 * @throws ConnectionRequired		throws a ConnectionRequired exception if not connected to an XMPP Server.
@@ -310,7 +310,7 @@ public interface OswService {
 	/**
 	 * Set or Publish a Profile to the XMPP server by sending an IQ of type IQProfilePublish
 	 * @param profile					the OneSocialWeb Profile to be set in the server. 
-	 * 									See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-profile.html
+	 * 									See: http://onesocialweb.org/spec/1.0/xep-osw-profile.html
 	 * @return							true if it succeeded in posting the profile to the server 
 	 * 									i.e. if it receives a reply IQ of type RESULT. 					
 	 * @throws RequestException 		throws a RequestException if it receives from the server a reply IQ  of
@@ -326,7 +326,7 @@ public interface OswService {
 	 * Retrieves from the XMPP Server the List of Relations of a user by sending an IQ of type IQRelationQuery
 	 *  
 	 * @param userJid					the JabberId of the user whose relations we want to retrieve.
-	 * @return							List of Relations. See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-relations.html
+	 * @return							List of Relations. See: http://onesocialweb.org/spec/1.0/xep-osw-relations.html
 	 * @throws RequestException			throws a RequestException if it receives from the server a reply IQ  of
 	 * 									type ERROR after trying to retrieve the Relations
 	 * @throws ConnectionRequired		throws a ConnectionRequired exception if not connected to an XMPP Server.
@@ -338,7 +338,7 @@ public interface OswService {
      * Set a new Relation to the server by trying to send an IQ of type IQRelationSetup.
      * 
      * @param relation					The social Relation object to be set in the server. 
-     * 									See: https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/xep-osw-relations.html
+     * 									See: http://onesocialweb.org/spec/1.0/xep-osw-relations.html
      * @return							true if no error ocurred.
      * @throws RequestException			throws a RequestException if it receives from the server a reply IQ of
 	 * 									type ERROR after trying to add the Relations.

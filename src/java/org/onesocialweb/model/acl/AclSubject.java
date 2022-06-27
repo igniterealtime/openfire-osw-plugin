@@ -18,9 +18,9 @@ package org.onesocialweb.model.acl;
 
 public interface AclSubject {
 
-	public static final String EVERYONE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone";
-	public static final String GROUP = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/group";
-	public static final String PERSON = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/person";
+	public static final String EVERYONE = "http://onesocialweb.org/spec/1.0/acl/subject/everyone";
+	public static final String GROUP = "http://onesocialweb.org/spec/1.0/acl/subject/group";
+	public static final String PERSON = "http://onesocialweb.org/spec/1.0/acl/subject/person";
 
 	public String getType();
 

@@ -18,7 +18,7 @@ package org.onesocialweb.xml.namespace;
 
 public class Onesocialweb {
 
-	public static final String NAMESPACE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/";
+	public static final String NAMESPACE = "http://onesocialweb.org/spec/1.0/";
 	
 	public static final String ACL_RULE_ELEMENT = "acl-rule";
 	

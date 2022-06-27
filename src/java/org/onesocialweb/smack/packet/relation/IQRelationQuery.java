@@ -26,7 +26,7 @@ public class IQRelationQuery extends IQ {
 
 	public static String NAME = "query";
 	
-	public static String NAMESPACE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations#query";
+	public static String NAMESPACE = "http://onesocialweb.org/spec/1.0/relations#query";
 	
 	private List<Relation> relations;
 	

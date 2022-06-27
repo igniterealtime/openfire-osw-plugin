@@ -5,7 +5,7 @@
    <name>${pom.name}</name>
    <description>${pom.description}</description>
    <author>Vodafone Group Services Limited.</author>
-   <url>https://igniterealtime.github.io/openfire-osw-plugin/</url>
+   <url>http://onesocialweb.org</url>
    <version>${pom.version}</version>
    <date>${openfire-plugin.build.date}</date>
    <minServerVersion>3.7.1</minServerVersion>

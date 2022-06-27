@@ -39,7 +39,7 @@ public class IQProfileQueryHandler extends IQHandler {
     private static final Logger Log = LoggerFactory.getLogger(IQProfileQueryHandler.class);
 	public static final String NAME = "query";
 	
-	public static final String NAMESPACE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#query";
+	public static final String NAMESPACE = "http://onesocialweb.org/spec/1.0/vcard4#query";
 	
 	private final IQHandlerInfo info = new IQHandlerInfo(NAME, NAMESPACE);
 

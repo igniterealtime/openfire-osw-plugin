@@ -24,7 +24,7 @@ public class IQProfilePublish extends IQ {
 
 	public static String NAME = "publish";
 	
-	public static String NAMESPACE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#publish";
+	public static String NAMESPACE = "http://onesocialweb.org/spec/1.0/vcard4#publish";
 	
 	private Profile profile;
 	
