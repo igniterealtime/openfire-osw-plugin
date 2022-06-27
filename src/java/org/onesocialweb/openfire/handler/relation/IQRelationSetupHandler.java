@@ -43,7 +43,7 @@ public class IQRelationSetupHandler extends IQHandler {
     private static final Logger Log = LoggerFactory.getLogger(IQRelationSetupHandler.class);
 	public static final String NAME = "setup";
 	
-	public static final String NAMESPACE = "http://onesocialweb.org/spec/1.0/relations#setup";
+	public static final String NAMESPACE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations#setup";
 	
 	private final IQHandlerInfo info = new IQHandlerInfo(NAME, NAMESPACE);
 

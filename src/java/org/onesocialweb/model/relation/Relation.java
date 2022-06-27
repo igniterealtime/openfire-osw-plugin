@@ -26,23 +26,23 @@ public interface Relation {
 
 	public class Nature {
 		
-		public static String COLLEAGUE = "http://onesocialweb.org/spec/1.0/relation/nature/colleague";
+		public static String COLLEAGUE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relation/nature/colleague";
 		
-		public static String FOLLOWING = "http://onesocialweb.org/spec/1.0/relation/nature/following";
+		public static String FOLLOWING = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relation/nature/following";
 		
-		public static String FRIEND = "http://onesocialweb.org/spec/1.0/relation/nature/friend";
+		public static String FRIEND = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relation/nature/friend";
 		
 	}
 	
 	public class Status {
 		
-		public static String CONFIRMED = "http://onesocialweb.org/spec/1.0/relation/status/confirmed";
+		public static String CONFIRMED = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relation/status/confirmed";
 		
-		public static String DENIED = "http://onesocialweb.org/spec/1.0/relation/status/denied";
+		public static String DENIED = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relation/status/denied";
 		
-		public static String PENDING = "http://onesocialweb.org/spec/1.0/relation/status/pending";
+		public static String PENDING = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relation/status/pending";
 		
-		public static String REQUEST = "http://onesocialweb.org/spec/1.0/relation/status/request";
+		public static String REQUEST = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relation/status/request";
 		
 	}
 	

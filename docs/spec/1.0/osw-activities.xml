@@ -92,18 +92,18 @@
       <item>
         <entry xmlns="http://www.w3.org/2005/Atom" 
                xmlns:activity="http://activitystrea.ms/spec/1.0/" 
-               xmlns:osw="http://onesocialweb.org/spec/1.0/">
+               xmlns:osw="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
           <title>to be or not to be ?</title>
           <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
           <activity:object>
-            <activity:object-type>http://onesocialweb.org/spec/1.0/object/status</activity:object-type>
+            <activity:object-type>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/object/status</activity:object-type>
             <content type="text/plain">to be or not to be ?</content>
           </activity:object>
           <osw:acl-rule>
-            <osw:acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-              http://onesocialweb.org/spec/1.0/acl/action/view
+            <osw:acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+              https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
             </osw:acl-action>
-            <osw:acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/everyone"/>
+            <osw:acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone"/>
           </osw:acl-rule>
         </entry>
       </item>
@@ -124,19 +124,19 @@
       <item>
         <entry xmlns="http://www.w3.org/2005/Atom" 
                xmlns:activity="http://activitystrea.ms/spec/1.0/" 
-               xmlns:osw="http://onesocialweb.org/spec/1.0/">
+               xmlns:osw="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
           <title>sunrise in Denmark</title>
           <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
           <activity:object>
-            <activity:object-type>http://onesocialweb.org/spec/1.0/object/picture</activity:object-type>
+            <activity:object-type>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/object/picture</activity:object-type>
             <content type="text/plain">OMG! Just saw the ghost of my father. Check out this picture</content>
     	[... MORE CONTENT OF AN ACTIVITY ENTRY FOR A PICTURE ...]
           </activity:object>
           <osw:acl-rule>
-            <osw:acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-              http://onesocialweb.org/spec/1.0/acl/action/view
+            <osw:acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+              https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
             </osw:acl-action>
-            <osw:acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/group">
+            <osw:acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/group">
 		Family
             </osw:acl-subject>
           </osw:acl-rule>
@@ -164,19 +164,19 @@
       <item id='urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296'>
         <entry xmlns="http://www.w3.org/2005/Atom" 
                xmlns:activity="http://activitystrea.ms/spec/1.0/" 
-               xmlns:osw="http://onesocialweb.org/spec/1.0/">
+               xmlns:osw="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
           <title>to be or not to be ? That is the question !</title>
           <id>urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296</id>
           <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
           <activity:object>
-            <activity:object-type>http://onesocialweb.org/spec/1.0/object/status</activity:object-type>
+            <activity:object-type>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/object/status</activity:object-type>
             <content type="text/plain">to be or not to be ? That is the question !</content>
           </activity:object>
           <osw:acl-rule>
-            <osw:acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-              http://onesocialweb.org/spec/1.0/acl/action/view
+            <osw:acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+              https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
             </osw:acl-action>
-            <osw:acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/everyone"/>
+            <osw:acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone"/>
           </osw:acl-rule>
         </entry>
       </item>
@@ -307,29 +307,29 @@
 	<p>TODO: This all section will soon be moved in its own spec and will be detailed and rewritten.</p>
 
     <example caption='Read access to everyone'><![CDATA[
-<acl-rule xmlns="http://onesocialweb.org/spec/1.0/">
- <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-   http://onesocialweb.org/spec/1.0/acl/action/view
+<acl-rule xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
+ <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+   https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
  </acl-action>
- <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/everyone"/>
+ <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone"/>
 </acl-rule>
     ]]></example>
 
     <example caption='Read access to everyone and update access to hamlet@denmark.lit and othelo@venice.lit'><![CDATA[
-<acl-rule xmlns="http://onesocialweb.org/spec/1.0/">
- <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-   http://onesocialweb.org/spec/1.0/acl/action/view
+<acl-rule xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
+ <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+   https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view
  </acl-action>
- <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/everyone"/>
+ <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone"/>
 </acl-rule>
-<acl-rule xmlns="http://onesocialweb.org/spec/1.0/">
-  <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-    http://onesocialweb.org/spec/1.0/acl/action/update
+<acl-rule xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
+  <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+    https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/update
   </acl-action>
-  <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/user">
+  <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/user">
     hamlet@denmark.lit
   </acl-subject>
-  <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/user">
+  <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/user">
     othelo@venice.lit
   </acl-subject>
 </acl-rule>

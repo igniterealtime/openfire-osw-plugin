@@ -21,6 +21,8 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -32,7 +34,18 @@ import org.jivesoftware.openfire.XMPPServer;
 import org.jivesoftware.openfire.container.Plugin;
 import org.jivesoftware.openfire.container.PluginManager;
 import org.jivesoftware.openfire.interceptor.InterceptorManager;
+import org.jivesoftware.openfire.http.HttpBindManager;
 import org.jivesoftware.util.JiveGlobals;
+
+import org.eclipse.jetty.apache.jsp.JettyJasperInitializer;
+import org.eclipse.jetty.plus.annotation.ContainerInitializer;
+import org.eclipse.jetty.server.handler.ContextHandlerCollection;
+import org.eclipse.jetty.servlets.*;
+import org.eclipse.jetty.servlet.*;
+import org.eclipse.jetty.webapp.WebAppContext;
+
+import org.apache.tomcat.InstanceManager;
+import org.apache.tomcat.SimpleInstanceManager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,6 +77,8 @@ public class OswPlugin implements Plugin {
 	private IQPEPHandler iqPEPHandler;
 	private MessageEventInterceptor messageInterceptor;
 	private IQSubscribeInterceptor iqSubscribeInterceptor;
+	
+    private WebAppContext oswService;	
 
 	public static EntityManagerFactory getEmFactory() {
 		return emFactory;
@@ -120,6 +135,16 @@ public class OswPlugin implements Plugin {
 		iqPEPHandler.addHandler(new PEPActivityHandler());
 		iqPEPHandler.addHandler(new PEPInboxHandler());
 		//iqPEPHandler.addHandler(new PEPCommentingHandler());
+		
+        oswService = new WebAppContext(null, directory.getPath() + "/classes/docs",  "/osw");
+        oswService.setClassLoader(this.getClass().getClassLoader());
+        oswService.getMimeTypes().addMimeMapping("wasm", "application/wasm");
+
+        final List<ContainerInitializer> initializers = new ArrayList<>();
+        initializers.add(new ContainerInitializer(new JettyJasperInitializer(), null));
+        oswService.setAttribute("org.eclipse.jetty.containerInitializers", initializers);
+        oswService.setAttribute(InstanceManager.class.getName(), new SimpleInstanceManager());
+        HttpBindManager.getInstance().addJettyHandler(oswService);		
 
 		Log.info("OneSocialWeb plugin has been loaded");
 	}
@@ -139,6 +164,8 @@ public class OswPlugin implements Plugin {
 		if (emFactory != null) {
 			emFactory.close();
 		}
+		
+        if (oswService != null) HttpBindManager.getInstance().removeJettyHandler(oswService);		
 
 		Log.info("OneSocialWeb plugin has been destroyed.");
 	}

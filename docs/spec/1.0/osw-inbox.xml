@@ -58,7 +58,7 @@
 <section1 topic='Reader Use Cases' anchor='reader'>
   <p>This section defines the use cases for and protocols to be used by any entity that wishes to query its notification inbox. In particular, an entity can paginate through the archived notifications, filter them, search them and delete them.</p>
 
-  <p>The inbox is effectively a PEP node, so these use cases are the same as the PubSub subscriber use cases<note>Detailed in <link url='http://xmpp.org/extensions/xep-0060.html#subscriber-subscribe'>http://xmpp.org/extensions/xep-0060.html#subscriber-subscribe</link>.</note> in a PEP context, towards the user 'http://onesocialweb.org/spec/1.0/inbox' PEP node. We reproduce a simplified version in the next sections as an introduction but in case of doubts, better to refer to the &xep0060; and &xep0163; specifications.</p>
+  <p>The inbox is effectively a PEP node, so these use cases are the same as the PubSub subscriber use cases<note>Detailed in <link url='http://xmpp.org/extensions/xep-0060.html#subscriber-subscribe'>http://xmpp.org/extensions/xep-0060.html#subscriber-subscribe</link>.</note> in a PEP context, towards the user 'https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/inbox' PEP node. We reproduce a simplified version in the next sections as an introduction but in case of doubts, better to refer to the &xep0060; and &xep0163; specifications.</p>
 
   <section2 topic='Query Latest Notifications' anchor='reader-query'>
 
@@ -72,7 +72,7 @@
     to='hamlet@denmark.lit'
     id='osw2'>
   <pubsub xmlns='http://jabber.org/protocol/pubsub'>
-    <items node='http://onesocialweb.org/spec/1.0/inbox'/>
+    <items node='https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/inbox'/>
   </pubsub>
 </iq>
     ]]></example>
@@ -85,7 +85,7 @@
     to='hamlet@denmark.lit/snsclient'
     id='osw2'>
   <pubsub xmlns='http://jabber.org/protocol/pubsub'>
-    <items node='http://onesocialweb.org/spec/1.0/inbox'>
+    <items node='https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/inbox'>
      <item id='urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296'>
         <entry xmlns="http://www.w3.org/2005/Atom"> 
           [ ... ENTRY DETAILS ... ]

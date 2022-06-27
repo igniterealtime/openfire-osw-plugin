@@ -75,16 +75,16 @@
     from='romeo@montague.lit/orchard'
     to='juliet@capulet.lit'
     id='osw1'>
-  <setup xmlns="http://onesocialweb.org/spec/1.0/relations#setup">
-    <relations xmlns="http://onesocialweb.org/spec/1.0/">
+  <setup xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations#setup">
+    <relations xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
       <to>juliet@capulet.lit</to>
-      <nature>http://onesocialweb.org/spec/1.0/relations/nature/engaged</nature>
+      <nature>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/nature/engaged</nature>
       <comment>I love this girl so much !</comment>
       <message>Dear Juliet, let's say to the world that we are engaged !</message>
       <acl-rule>
-          <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-            http://onesocialweb.org/spec/1.0/acl/action/view</osw:acl-action>
-          <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/everyone"/>
+          <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+            https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view</osw:acl-action>
+          <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/everyone"/>
       </acl-rule>
     </relations>
   </setup>
@@ -97,15 +97,15 @@
     <example caption='Server notifies remote user of new relation'><![CDATA[
 <message from="romeo@montague.lit" type="headline" to="juliet@capulet.lit" >
   <event xmlns="http://jabber.org/protocol/pubsub#event">
-    <items node='http://onesocialweb.org/spec/1.0/relations'>
+    <items node='https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations'>
       <item id='id="urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296'>
-        <relation xmlns="http://onesocialweb.org/spec/1.0/">
+        <relation xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
 	  <id>urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296</id>
           <published>2010-01-13T12:40:51.292Z</published>
           <from>romeo@montague.lit</from>
           <to>juliet@capulet.lit</to>
-          <nature>http://onesocialweb.org/spec/1.0/relations/nature/engaged</nature>
-          <status>http://onesocialweb.org/spec/1.0/relations/status/requested</status>
+          <nature>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/nature/engaged</nature>
+          <status>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/status/requested</status>
           <message>Dear Juliet, let's say to the world that we are engaged !</message>
         </relation>
        </item>
@@ -121,11 +121,11 @@
     <example caption='Server notifies remote user of relation status change'><![CDATA[
 <message from="juliet@capulet.lit" type="headline" to="romeo@montague.lit" >
   <event xmlns="http://jabber.org/protocol/pubsub#event">
-    <items node='http://onesocialweb.org/spec/1.0/relations'>
+    <items node='https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations'>
       <item id='id="urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296'>
-        <relation xmlns="http://onesocialweb.org/spec/1.0/">
+        <relation xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
           <id>urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296</id>
-          <status>http://onesocialweb.org/spec/1.0/relations/status/pending</status>
+          <status>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/status/pending</status>
         </relation>
       </item>
     </items>
@@ -149,14 +149,14 @@
     from='juliet@capulet.lit/rose'
     to='romeo@montague.lit'
     id='osw-2'>
-  <update xmlns="http://onesocialweb.org/protocol/0.1/relations#update">
-    <relation xmlns="http://onesocialweb.org/spec/1.0/">
+  <update xmlns="https://igniterealtime.github.io/openfire-osw-plugin//protocol/0.1/relations#update">
+    <relation xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
       <id>urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296</id>
-      <status>http://onesocialweb.org/spec/1.0/relations/status/confirmed</status>
+      <status>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/status/confirmed</status>
       <acl-rule>
-          <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-            http://onesocialweb.org/spec/1.0/acl/action/view</acl-action>
-          <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/group">
+          <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+            https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view</acl-action>
+          <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/group">
             Friends
           </acl-subject>
       </acl-rule>
@@ -171,11 +171,11 @@
     <example caption='Local server notifies remote server of update'><![CDATA[
 <message from="romeo@montague.lit" type="headline" to="juliet@capulet.lit" >
   <event xmlns="http://jabber.org/protocol/pubsub#event">
-    <items node='http://onesocialweb.org/spec/1.0/relations'>
+    <items node='https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations'>
       <item id='id="urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296'>
-        <relation xmlns="http://onesocialweb.org/spec/1.0/">
+        <relation xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
           <id>urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296</id>
-          <status>http://onesocialweb.org/spec/1.0/relations/status/confirmed</status>
+          <status>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/status/confirmed</status>
         </relation>
       </item>
     </items>
@@ -201,14 +201,14 @@
     from='juliet@capulet.lit/rose'
     to='capulet.lit'
     id='osw-3'>
-  <update xmlns="http://onesocialweb.org/protocol/0.1/relations#update">
-    <relation xmlns="http://onesocialweb.org/spec/1.0/">
+  <update xmlns="https://igniterealtime.github.io/openfire-osw-plugin//protocol/0.1/relations#update">
+    <relation xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
       <id>urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296</id>
-      <status>http://onesocialweb.org/spec/1.0/relations/status/confirmed</status>
+      <status>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/status/confirmed</status>
       <acl-rule>
-          <acl-action permission="http://onesocialweb.org/spec/1.0/acl/permission/grant">
-            http://onesocialweb.org/spec/1.0/acl/action/view</acl-action>
-          <acl-subject type="http://onesocialweb.org/spec/1.0/acl/subject/group">
+          <acl-action permission="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/permission/grant">
+            https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/action/view</acl-action>
+          <acl-subject type="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/acl/subject/group">
             Friends
           </acl-subject>
       </acl-rule>
@@ -251,7 +251,7 @@
     from='romeo@montague.lit/orchard'
     to='juliet@capulet.lit'
     id='osw2'>
-  <query xmlns="http://onesocialweb.org/protocol/0.1/relations#query">
+  <query xmlns="https://igniterealtime.github.io/openfire-osw-plugin//protocol/0.1/relations#query">
   </query>
 </iq>
 ]]></example>
@@ -262,22 +262,22 @@
 <iq type='result'
     from='juliet@capulet.lit' 
     to='romeo@montague.lit/orchard'>
-  <query xmlns="http://onesocialweb.org/protocol/0.1/relations#query">
-    <relation xmlns="http://onesocialweb.org/spec/1.0/">
+  <query xmlns="https://igniterealtime.github.io/openfire-osw-plugin//protocol/0.1/relations#query">
+    <relation xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/">
       <id>urn:uuid:0bfb71a4-d8fd-4410-b119-199c3596f296</id>
       <published>2010-01-13T12:40:51.292Z</published>
       <from>romeo@montague.lit</from>
       <to>juliet@capulet.lit</to>
-      <nature>http://onesocialweb.org/spec/1.0/relations/nature/engaged</nature>
-      <status>http://onesocialweb.org/spec/1.0/relations/status/confirmed</status>
+      <nature>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/nature/engaged</nature>
+      <status>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/status/confirmed</status>
     </relations>
-    <relations xmlns="http://onesocialweb.org/spec/1.0/relations">
+    <relations xmlns="https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations">
       <id>urn:uuid:042D7D22-0760-11DF-97DC-8BA455D89593</id>
       <published>2010-01-16T15:23:10.252Z</published>
       <from>juliet@capulet.lit</from>
       <to>camilia@italy.lit</to>
-      <nature>http://onesocialweb.org/spec/1.0/relations/nature/friend</nature>
-      <status>http://onesocialweb.org/spec/1.0/relations/status/confirmed</status>
+      <nature>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/nature/friend</nature>
+      <status>https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations/status/confirmed</status>
     </relation>
   </query>
 </iq>
@@ -303,7 +303,7 @@
     <p>A relationship is defined as a link between two users (identified by their bare JID). It is identified by a Globaly Unique Identified. It is characterized by a nature. It can be mutually verified, meaning that the other end of the relationship confirms this relationship as being true.</p>
 
     <ul>
-      <li>A relation is defined inside a &lt;relationship/&gt; element, defined in the &quot;http://onesocialweb.org/spec/1.0/&quot; XML Namespace.</li>
+      <li>A relation is defined inside a &lt;relationship/&gt; element, defined in the &quot;https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/&quot; XML Namespace.</li>
       <li>&lt;id/&gt;: element uniquely identified a relationship. If two users have agreed on a relationship, they should use the same identifier when refering to that relationship.</li>
       <li>&lt;from/&gt;: specicifies whose the initiator of the relationship setup. This value does not changed depending on the end (the from stays the same whoever you ask about the relationship).</li>
       <li>&lt;to/&gt;: specicifies the target of the relationship setup. This value does not changed depending on the end (the to stays the same whoever you ask about the relationship).</li>

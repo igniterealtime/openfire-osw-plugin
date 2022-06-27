@@ -44,7 +44,7 @@ import org.xmpp.packet.Message;
  */
 public class RelationManager {
 
-	public static final String NODE = "http://onesocialweb.org/spec/1.0/relations";
+	public static final String NODE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/relations";
 	
 	/**
 	 * Singleton: keep a static reference to teh only instance

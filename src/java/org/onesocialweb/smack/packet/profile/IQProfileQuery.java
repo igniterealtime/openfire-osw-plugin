@@ -24,7 +24,7 @@ public class IQProfileQuery extends IQ {
 	
 	public static String NAME = "query";
 	
-	public static String NAMESPACE = "http://onesocialweb.org/spec/1.0/vcard4#query";
+	public static String NAMESPACE = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#query";
 	
 	private Profile profile;
 	

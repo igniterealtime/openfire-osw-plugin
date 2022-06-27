@@ -47,7 +47,7 @@ public class UploadManager {
 	public void updateProgress(JID user, long pBytesRead, long pContentLength, String requestId) {
 		Message message = new Message();
 		message.setTo(user);
-		Element payload = message.addChildElement("upload", "http://onesocialweb.org/spec/1.0/upload");
+		Element payload = message.addChildElement("upload", "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/upload");
 		payload.addElement("request-id").setText(requestId);
 		payload.addElement("status").setText("progress");
 		payload.addElement("bytes-read").setText(Long.toString(pBytesRead));
@@ -87,7 +87,7 @@ public class UploadManager {
 		
 		Message message = new Message();
 		message.setTo(user);
-		Element payload = message.addChildElement("upload", "http://onesocialweb.org/spec/1.0/upload");
+		Element payload = message.addChildElement("upload", "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/upload");
 		payload.addElement("request-id").setText(requestId);
 		payload.addElement("status").setText("completed");
 		payload.addElement("file-id").setText(file.getName());

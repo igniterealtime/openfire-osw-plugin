@@ -39,7 +39,7 @@ import org.xmpp.packet.PacketError;
 
 public class IQProfilePublishHandler extends IQHandler {
     private static final Logger Log = LoggerFactory.getLogger(IQProfilePublishHandler.class);
-	private final IQHandlerInfo info = new IQHandlerInfo("publish", "http://onesocialweb.org/spec/1.0/vcard4#publish");
+	private final IQHandlerInfo info = new IQHandlerInfo("publish", "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/vcard4#publish");
 
 	private UserManager userManager;
 

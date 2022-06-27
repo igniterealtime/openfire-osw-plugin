@@ -1,0 +1,85 @@
+/*
+ *  Copyright 2010 Vodafone Group Services Ltd.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *    
+ */
+ 
+ /* OneSocialWeb theme */
+
+/* Imports */
+@import url("styles/core.css");
+@import url("fonts/stylesheet.css");
+
+/* Fonts */
+
+body, input, select, button, textarea {
+	font-family:TitilliumText14L400wt !important;
+	}
+
+input[type='password'] {
+	font-family: Arial, Helvetica, sans-serif !important;
+	}
+	
+.mainmenu div .gwt-Button {
+	font-family: TitilliumText14L600wt;
+	}
+	
+.dialog .tabcontentflowlayout input.fileupload{
+	font-family:TitilliumText14L400wt;
+	}
+
+/* Background */
+
+#wrapper {
+	background:#D9E7EF url(assets/bg2.gif) repeat-x scroll 0 0; 
+	}
+
+/* Links */
+
+a:link, a:visited {
+	color: #4082D7;
+	}
+	
+a:hover, a:active {
+	color: #4082D7;
+	}
+
+.link {
+	color: #4082D7;
+	}
+
+/* Main menu selected */
+
+.awesome.selected {
+	background-color:#4082D7;
+	border:1px solid #3976C5 !important;
+	}
+
+.awesome.selected:hover {
+	background-color:#4082D7;
+	border:1px solid #3976C5 !important;
+	}
+
+/* Window title */
+
+.windowtitle {
+	background-color: #4082D7;
+	color: #fff;
+	}
+	
+/* Tab Bar */
+
+.gwt-TabBarItem-wrapper-selected .gwt-TabBarItem {
+	background-color: #4082D7;
+	}

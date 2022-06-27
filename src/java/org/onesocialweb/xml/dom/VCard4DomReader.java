@@ -47,7 +47,7 @@ public abstract class VCard4DomReader
 	
 	private final static String NS_VCARD4 = "urn:ietf:params:xml:ns:vcard-4.0";
 
-	private final static String NS_ONESOCIALWEB = "http://onesocialweb.org/spec/1.0/";
+	private final static String NS_ONESOCIALWEB = "https://igniterealtime.github.io/openfire-osw-plugin//spec/1.0/";
 
 	
 	public VCard4DomReader()
