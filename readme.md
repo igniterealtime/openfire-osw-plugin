@@ -1,4 +1,4 @@
-# One Social web plugin for Openfire
+# One Social Web plugin for Openfire
 
 <img src="https://igniterealtime.github.io/openfire-osw-plugin/onesocialweb.png" /> 
 
