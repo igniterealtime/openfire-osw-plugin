@@ -1,5 +1,7 @@
 # One Social web plugin for Openfire
 
+<img src="https://igniterealtime.github.io/openfire-osw-plugin/onesocialweb.png" /> 
+
 This is the revived onesocialweb project for Openfire 4.7.1+. It includes: 
 
 - the Openfire plugin
