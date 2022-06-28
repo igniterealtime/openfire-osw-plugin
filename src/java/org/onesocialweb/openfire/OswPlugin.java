@@ -207,13 +207,21 @@ public class OswPlugin implements Plugin {
 				Log.error("Cannot recognise the Database.." + e.getMessage());
 			}
 		}
-		// save the properties...
+
+		String logFile = JiveGlobals.getHomeDirectory() + "/logs/osw_openjpa.log";
+		String debugLevel = "INFO";
+		
+		if (Log.isDebugEnabled()) {	
+			debugLevel = "TRACE";
+		}
+
+		// save the properties...		
 		connProperties.put("openjpa.ConnectionURL", serverURL);
 		connProperties.put("openjpa.ConnectionDriverName", driver);
 		connProperties.put("openjpa.ConnectionUserName", username);
 		connProperties.put("openjpa.ConnectionPassword", password);
 
-		connProperties.put("openjpa.Log", "DefaultLevel=TRACE, Tool=TRACE, SQL=TRACE");
+		connProperties.put("openjpa.Log", "DefaultLevel=" + debugLevel + ", Tool=" + debugLevel + ", SQL=" + debugLevel + ", File=" + logFile);
 		connProperties.put("openjpa.jdbc.SynchronizeMappings", "buildSchema(ForeignKeys=true)");
 		connProperties.put("openjpa.Multithreaded", "true");
 		
