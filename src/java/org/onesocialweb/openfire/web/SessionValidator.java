@@ -53,7 +53,7 @@ public class SessionValidator {
 		}
 		
 		// Is the session authenticated ?
-		if (session.getStatus() != Session.STATUS_AUTHENTICATED) {
+		if (session.getStatus() != Session.Status.AUTHENTICATED) {
 			return false;
 		}
 

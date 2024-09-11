@@ -72,7 +72,7 @@ public class IQRelationUpdateHandler extends IQHandler {
 		try {
 
 			// Only a local user can request to update a relation
-			if (!userManager.isRegisteredUser(sender.getNode())) {
+			if (!userManager.isRegisteredUser(sender, false)) {
 				IQ result = IQ.createResultIQ(packet);
 				result.setChildElement(packet.getChildElement().createCopy());
 				result.setError(PacketError.Condition.not_authorized);

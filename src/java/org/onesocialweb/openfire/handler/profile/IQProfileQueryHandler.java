@@ -72,7 +72,7 @@ public class IQProfileQueryHandler extends IQHandler {
 			
 			// A valid request is an IQ of type get, for a valid and local recipient
 			if (!(packet.getType().equals(IQ.Type.get) && target != null && target.getNode() != null 
-					&& userManager.isRegisteredUser(target.getNode()))) {
+					&& userManager.isRegisteredUser(target, false))) {
 				IQ result = IQ.createResultIQ(packet);
 				result.setChildElement(packet.getChildElement().createCopy());
 				result.setError(PacketError.Condition.bad_request);

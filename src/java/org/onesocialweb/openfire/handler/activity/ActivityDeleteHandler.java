@@ -66,7 +66,7 @@ public class ActivityDeleteHandler  extends PEPCommandHandler {
 			}
 			
 			// Only a local user can delete an activity to his stream
-			if (!userManager.isRegisteredUser(sender.getNode())) {
+			if (!userManager.isRegisteredUser(sender, false)) {
 				IQ result = IQ.createResultIQ(packet);
 				result.setChildElement(packet.getChildElement().createCopy());
 				result.setError(PacketError.Condition.not_authorized);
