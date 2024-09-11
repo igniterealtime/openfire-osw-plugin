@@ -17,6 +17,7 @@
 package org.onesocialweb.openfire;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.Hashtable;
@@ -208,7 +209,7 @@ public class OswPlugin implements Plugin {
 			}
 		}
 
-		String logFile = JiveGlobals.getHomeDirectory() + "/logs/osw_openjpa.log";
+		Path logFile = JiveGlobals.getHomePath().resolve("logs").resolve("osw_openjpa.log");
 		String debugLevel = "INFO";
 		
 		if (Log.isDebugEnabled()) {	
@@ -221,7 +222,7 @@ public class OswPlugin implements Plugin {
 		connProperties.put("openjpa.ConnectionUserName", username);
 		connProperties.put("openjpa.ConnectionPassword", password);
 
-		connProperties.put("openjpa.Log", "DefaultLevel=" + debugLevel + ", Tool=" + debugLevel + ", SQL=" + debugLevel + ", File=" + logFile);
+		connProperties.put("openjpa.Log", "DefaultLevel=" + debugLevel + ", Tool=" + debugLevel + ", SQL=" + debugLevel + ", File=" + logFile.toAbsolutePath());
 		connProperties.put("openjpa.jdbc.SynchronizeMappings", "buildSchema(ForeignKeys=true)");
 		connProperties.put("openjpa.Multithreaded", "true");
 		

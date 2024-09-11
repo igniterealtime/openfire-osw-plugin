@@ -60,7 +60,7 @@ public class ActivityUnsubscribeHandler extends PEPCommandHandler {
 			
 			// A valid request is an IQ of type set, for a valid and local recipient
 			if (!(packet.getType().equals(IQ.Type.set) && recipient != null && recipient.getNode() != null 
-					&& userManager.isRegisteredUser(recipient.getNode()))) {
+					&& userManager.isRegisteredUser(recipient, false))) {
 				IQ result = IQ.createResultIQ(packet);
 				result.setChildElement(packet.getChildElement().createCopy());
 				result.setError(PacketError.Condition.bad_request);

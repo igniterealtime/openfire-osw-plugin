@@ -75,9 +75,9 @@ public class MessageEventInterceptor implements PacketInterceptor {
 				return;
 			}
 
-			// We only care for messaes to local users
+			// We only care for messages to local users
 			if (!server.isLocal(toJID)
-					|| !server.getUserManager().isRegisteredUser(toJID)) {
+					|| !server.getUserManager().isRegisteredUser(toJID, false)) {
 				return;
 			}
 

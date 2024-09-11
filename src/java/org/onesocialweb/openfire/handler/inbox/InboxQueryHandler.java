@@ -83,7 +83,7 @@ public class InboxQueryHandler extends PEPCommandHandler {
 			}
 
 			// Only a local user has an inbox
-			if (!userManager.isRegisteredUser(sender.getNode())) {
+			if (!userManager.isRegisteredUser(sender, false)) {
 				IQ result = IQ.createResultIQ(packet);
 				result.setChildElement(packet.getChildElement().createCopy());
 				result.setError(PacketError.Condition.not_authorized);

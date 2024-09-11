@@ -81,7 +81,7 @@ public class IQProfilePublishHandler extends IQHandler {
 			}
 			
 			// Only a local user can publish its profile
-			if (!userManager.isRegisteredUser(sender.getNode())) {
+			if (!userManager.isRegisteredUser(sender, false)) {
 				IQ result = IQ.createResultIQ(packet);
 				result.setChildElement(packet.getChildElement().createCopy());
 				result.setError(PacketError.Condition.not_authorized);

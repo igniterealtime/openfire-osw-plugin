@@ -68,7 +68,7 @@ public class ActivitySubscriptionsHandler extends PEPCommandHandler {
 			
 			// A valid request is an IQ of type get, for a valid and local recipient
 			if (!(packet.getType().equals(IQ.Type.get) && recipient != null && recipient.getNode() != null 
-					&& userManager.isRegisteredUser(recipient.getNode()))) {
+					&& userManager.isRegisteredUser(recipient, false))) {
 				IQ result = IQ.createResultIQ(packet);
 				result.setChildElement(packet.getChildElement().createCopy());
 				result.setError(PacketError.Condition.bad_request);
