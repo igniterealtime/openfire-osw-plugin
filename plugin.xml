@@ -7,7 +7,7 @@
    <author>Vodafone Group Services Limited.</author>
    <url>http://onesocialweb.org</url>
    <version>${pom.version}</version>
-   <date>${openfire-plugin.build.date}</date>
+   <date>2024-09-12</date>
    <minServerVersion>4.8.0</minServerVersion>
    <licenseType>apache</licenseType>
 </plugin>
