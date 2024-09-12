@@ -11,7 +11,7 @@
 	
   <groupId>org.onesocialweb</groupId>
   <artifactId>osw-openfire-plugin</artifactId>
-  <version>0.7.0-SNAPSHOT</version>
+  <version>0.7.0</version>
   
   <name>osw-openfire-plugin</name>
   <description>Adds onesocialweb protocol support to an openfire server</description>    
